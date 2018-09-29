@@ -38,11 +38,14 @@ class KNN():
 		print(self.predict)
 		
 		
-		
-	
-		
-		
 
+		
+		
+#X_datapoint - array of features of the datapoint to be predicted 
+#X_train - training datasets
+#y_train - target of training set
+#feat - number of features
+#k - k parameter
 		
 		
 		
