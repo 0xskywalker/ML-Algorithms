@@ -25,9 +25,6 @@ class NeuralNetwork():
         return 1/(1+np.exp(-z))
     def sigmoid_derivative(self, sigmoid):
         return sigmoid*(1-sigmoid)
-    #In other to solve the vanishing gradient problem of the multi layer neural network 
-    #'if you intend to use the code on large dataset'.
-    # I suggest you rewrite the hidden layer activation function to Relu. 
     def forward(self):
         self.z1 = np.dot(self.X_train, self.w1)
         self.a1 = self.sigmoid(self.z1)
