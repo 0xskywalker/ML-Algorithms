@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Cr
 
-@author: ALOJOECEE
+author: Skywalker(@alojoecee)
 """
 
 import numpy as np
