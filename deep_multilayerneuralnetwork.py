@@ -51,8 +51,6 @@ class NeuralNetwork():
             cost = np.mean(np.square(self.error))
             print("Cost function \n", cost)
             print("Weights for input layer \n", self.w1)
-            print("Weights for hidden layers \n", self.w)
-            print("Weights for output layer \n", self.w2)
             self.d1 = self.error * self.sigmoid_derivative(self.output)
             self.error2 = np.dot(self.d1, self.w2.T)
             if self.hl > 1:
@@ -67,11 +65,14 @@ class NeuralNetwork():
             	for m in range(self.hl):
                 	self.w[m] += np.dot(self.a[m].T, self.d[self.hl-1])
             	y_list.append(cost)
+                print("Weights for hidden layers \n", self.w)
+                print("Weights for output layer \n", self.w2)
             elif self.hl == 1:
             	self.d2 = self.error2*self.sigmoid_derivative(self.a1)
             	self.w1 += np.dot(self.X_train.T, self.d2)
             	self.w2 += np.dot(self.a1.T, self.d1)
             	y_list.append(cost)
+                print("Weights for output layer \n", self.w2)
         #gradient descent plot graph
         x = [a for a in range(iterations)]
         y = y_list
