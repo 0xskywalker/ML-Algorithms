@@ -1,3 +1,3 @@
 # ML-Algorithms
 
-Collection of different Machine Learning algorithms for linear regression problems, developed from scratch. Updated with new chapters progressively. 
+Collection of different Machine Learning algorithms for regression and classification problems, developed from scratch. Updated with new chapters progressively. 
