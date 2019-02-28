@@ -2,7 +2,7 @@
 """
 Created on Mon Oct 22 11:37:56 2018
 
-author: Skywalker(@alojoecee)
+author: Skywalker
 """
 
 from collections import Counter
