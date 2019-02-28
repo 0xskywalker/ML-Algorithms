@@ -3,7 +3,7 @@
 """
 Created on Sat Sep 29 19:53:20 2018
 
-author: Skywalker(@alojoecee)
+@author: Skywalker
 """
 
 import math
